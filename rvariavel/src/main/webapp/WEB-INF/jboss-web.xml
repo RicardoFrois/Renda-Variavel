@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE PUBLIC>
+
+<!-- RACF 24/11/2016 - Pesquisado na internet. Encontrei a sugestão abaixo que solucionou o problema de não encontrar a página solicitada. Creio que corrigiu a Navegação implicita.
+	 I think you also have a WEB-INF/jboss-web.xml file in which you have set the context root. Otherwise the context automatically would have been 'the name of the WAR' file.      -->  
+
+<jboss-web>
+    <context-root>rvariavel</context-root>
+</jboss-web>
